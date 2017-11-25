@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:background="@drawable/rumah_sakit_icon"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rumah Sakit abc"
+        android:textSize="30sp"
+        android:textColor="@color/colorFont"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/star_icon"
+            />
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/star_icon"
+            />
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/star_icon"
+            />
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/star_icon"
+            />
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/star_icon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(32)"
+            android:textSize="35sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/colorFont"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jl.abc no.1, Jakarta Barat"
+        android:textSize="25sp"
+        android:textColor="@color/colorFont"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="021 - 1234567"
+        android:textSize="25sp"
+        android:textColor="@color/colorFont"
+        />
+
+    <Button
+        android:id="@+id/btnLihatDaftarDokter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lihat Dokter Praktek"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <ImageButton
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="@drawable/bookmark"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bookmark"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="@color/colorFont"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorFont"
+            android:layout_marginLeft="40dp"
+            />
+
+        <ImageButton
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="@drawable/review"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="@color/colorFont"
+            />
+    </LinearLayout>
+
+</LinearLayout>

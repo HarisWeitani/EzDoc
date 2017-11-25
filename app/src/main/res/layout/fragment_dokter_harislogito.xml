@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:background="@drawable/person_icon"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dr. Haris Logito"
+        android:textSize="30sp"
+        android:textColor="@color/colorFont"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spesialis         : Jantung"
+        android:textSize="25sp"
+        android:textColor="@color/colorFont"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rumah Sakit   : abc"
+        android:textSize="25sp"
+        android:textColor="@color/colorFont"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jadwal Praktik :"
+        android:textSize="24sp"
+        android:textColor="@color/colorFont"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senin     : 16.00 - 19.00"
+        android:textSize="25sp"
+        android:textColor="@color/colorFont"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selasa   : 16.00 - 20.00"
+        android:textSize="25sp"
+        android:textColor="@color/colorFont"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rabu      : 16.00 - 20.00"
+        android:textSize="25sp"
+        android:textColor="@color/colorFont"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumat    : 18.00 - 21.00"
+        android:textSize="25sp"
+        android:textColor="@color/colorFont"
+        />
+
+</LinearLayout>
