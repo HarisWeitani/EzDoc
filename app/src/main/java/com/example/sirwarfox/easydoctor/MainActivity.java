@@ -81,16 +81,14 @@ public class MainActivity extends AppCompatActivity
             fragment = new RumahSakitFragment();
         } else if (id == R.id.nav_dokter) {
             fragment = new DokterFragment();
-        }
-//        else if (id == R.id.nav_slideshow) {
-//
-//        } else if (id == R.id.nav_manage) {
-//
-//        }
-        else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_payYourBill) {
+            fragment = new PayYourBillFragment();
+        } else if (id == R.id.nav_premiumMember) {
+            fragment = new PremiumMemberFragmednt();
+        }else if (id == R.id.nav_share) {
             Toast.makeText(this, "We are Sorry This button is under construction", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_send) {
-            Toast.makeText(this, "We are Sorry This button is under construction", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_forum) {
+            fragment = new ForumFragment();
         }
 
         if(fragment != null){
