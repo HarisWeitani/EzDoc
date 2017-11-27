@@ -12,6 +12,17 @@
             android:id="@+id/nav_dokter"
             android:icon="@drawable/person_icon"
             android:title="Dokter" />
+        <item
+            android:id="@+id/nav_payYourBill"
+            android:icon="@drawable/money_cash_icon"
+            android:title="Pay Your Bill"
+            />
+        <item
+            android:id="@+id/nav_premiumMember"
+            android:icon="@drawable/premium_icon"
+            android:title="Premium Membership"
+            />
+
         <!--<item-->
             <!--android:id="@+id/nav_slideshow"-->
             <!--android:icon="@drawable/ic_menu_slideshow"-->
@@ -31,7 +42,7 @@
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Forum" />
         </menu>
     </item>
 

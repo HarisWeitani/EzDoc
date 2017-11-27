@@ -30,42 +30,51 @@ public class RumahSakitFragment extends Fragment {
         view.findViewById(R.id.btnRumahSakitabc).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Rumah Sakit abc Pressed", Toast.LENGTH_SHORT).show();
-                Fragment fragment = new RumahSakitAbcFragment();
-
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-                fragmentTransaction.replace(R.id.screen_area, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+//                Toast.makeText(getActivity(), "Rumah Sakit abc Pressed", Toast.LENGTH_SHORT).show();
+                fragmentRumahSakitControl();
             }
         });
 
         view.findViewById(R.id.btnRumahSakitAlog).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Rumah Sakit Alog Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "Rumah Sakit Alog Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+                fragmentRumahSakitControl();
             }
         });
         view.findViewById(R.id.btnRumahSakitHaris).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Rumah Sakit Haris Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "Rumah Sakit Haris Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+                fragmentRumahSakitControl();
             }
         });
         view.findViewById(R.id.btnRumahSakitMele).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Rumah Sakit Mele Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "Rumah Sakit Mele Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+                fragmentRumahSakitControl();
             }
         });
         view.findViewById(R.id.btnRumahSakitAHM).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Rumah Sakit AHM Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "Rumah Sakit AHM Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+                fragmentRumahSakitControl();
             }
         });
 
     }
+
+    public void fragmentRumahSakitControl(){
+        Fragment fragment = new RumahSakitAbcFragment();
+
+        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        fragmentTransaction.replace(R.id.screen_area, fragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
 }

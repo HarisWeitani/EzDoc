@@ -29,41 +29,49 @@ public class DokterFragment extends Fragment{
         view.findViewById(R.id.btnDokterHarisLogito).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Dokter Haris Logito Pressed", Toast.LENGTH_SHORT).show();
-                Fragment fragment = new DokterHarisLogitoFragment();
-
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-                fragmentTransaction.replace(R.id.screen_area, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                //Toast.makeText(getActivity(), "Dokter Haris Logito Pressed", Toast.LENGTH_SHORT).show();
+                fragmentDokterControl();
             }
         });
 
         view.findViewById(R.id.btnDokterLogitoHaris).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Dokter Logito Haris Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "Dokter Logito Haris Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+                fragmentDokterControl();
             }
         });
         view.findViewById(R.id.btnDokterAdrianMele).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Dokter Adrian Mele Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "Dokter Adrian Mele Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+                fragmentDokterControl();
             }
         });
         view.findViewById(R.id.btnDokterMeleLogito).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Dokter Mele Logito Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "Dokter Mele Logito Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+                fragmentDokterControl();
             }
         });
         view.findViewById(R.id.btnDokterSledingers).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Dokter Sledingers Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "Dokter Sledingers Pressed But Nothing Happen", Toast.LENGTH_SHORT).show();
+                fragmentDokterControl();
             }
         });
+    }
+
+    public void fragmentDokterControl(){
+        Fragment fragment = new DokterHarisLogitoFragment();
+
+        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        fragmentTransaction.replace(R.id.screen_area, fragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 }
