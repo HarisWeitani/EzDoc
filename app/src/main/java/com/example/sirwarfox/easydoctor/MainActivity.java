@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Toast.makeText(this, "DISCLAIMER : \nEVERYTHING IN THIS APP IS NOT TRUE\nI REPEAT IT IS NOT TRUE", Toast.LENGTH_LONG).show();
             return true;
         }
 
