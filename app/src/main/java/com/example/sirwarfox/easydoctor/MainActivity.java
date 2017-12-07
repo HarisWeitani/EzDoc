@@ -20,6 +20,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    int flag3 = 0, flag7 = 0, flag4 = 0, flag6 = 0;
+    boolean flag33 = false, flag77 = false, flag44 = false, flag66 = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,8 +36,10 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+//        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+//        navigationView.setNavigationItemSelectedListener(this);
+
+        easterEgg();
     }
 
     @Override
@@ -63,7 +68,26 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Toast.makeText(this, "DISCLAIMER : \nEVERYTHING IN THIS APP IS NOT TRUE\nI REPEAT IT IS NOT TRUE", Toast.LENGTH_LONG).show();
+
+            if(flag33 == false && flag77 == false && flag44 == false && flag77 == false) {
+                Toast.makeText(this, "DISCLAIMER : \nEVERYTHING IN THIS APP IS NOT TRUE\nI REPEAT IT IS NOT TRUE", Toast.LENGTH_LONG).show();
+            }
+            if(flag33 == false) {
+                flag3++;
+                Toast.makeText(this, "DISCLAIMER : \nEVERYTHING IN THIS APP IS NOT TRUE\nI REPEAT IT IS NOT", Toast.LENGTH_LONG).show();
+            }
+            if(flag33 == true && flag77 == false) {
+                flag7++;
+                Toast.makeText(this, "DISCLAIMER : \nEVERYTHING IN THIS APP IS NOT TRUE\nI REPEAT IT IS", Toast.LENGTH_LONG).show();
+            }
+            if(flag33 == true && flag77 == true && flag44 == false) {
+                flag4++;
+                Toast.makeText(this, "DISCLAIMER : \nEVERYTHING IN THIS APP IS NOT TRUE\nI REPEAT", Toast.LENGTH_LONG).show();
+            }
+            if(flag33 == true && flag77 == true && flag44 == true && flag66 == false) {
+                flag6++;
+                Toast.makeText(this, "DISCLAIMER : \nEVERYTHING IN THIS APP IS NOT TRUE\n", Toast.LENGTH_LONG).show();
+            }
             return true;
         }
 
@@ -78,9 +102,19 @@ public class MainActivity extends AppCompatActivity
 
         int id = item.getItemId();
 
+        easterEgg();
+
         if (id == R.id.nav_rumahsakit) {
             fragment = new RumahSakitFragment();
         } else if (id == R.id.nav_dokter) {
+            if(flag3 == 3)
+                flag33 = true;
+            if(flag7 == 7)
+                flag77 = true;
+            if(flag4 == 4)
+                flag44 = true;
+            if(flag6 == 6)
+                flag66 = true;
             fragment = new DokterFragment();
         } else if (id == R.id.nav_payYourBill) {
             fragment = new PayYourBillFragment();
@@ -104,5 +138,19 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void easterEgg(){
+        //buat hide menu
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        Menu menu = navigationView.getMenu();
+        MenuItem target = menu.findItem(R.id.nav_easterEgg);
+        if(flag3 == 3 && flag7 == 7 && flag4 == 4 && flag6 == 6)
+            target.setVisible(true);
+        else
+            target.setVisible(false);
+
     }
 }

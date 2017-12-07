@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/EasyDoctor.iml" filepath="$PROJECT_DIR$/EasyDoctor.iml" />
       <module fileurl="file://C:\Users\Haris weitani\AndroidStudioProjects\EzDoc\EasyDoctor.iml" filepath="C:\Users\Haris weitani\AndroidStudioProjects\EzDoc\EasyDoctor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/EzDoc.iml" filepath="$PROJECT_DIR$/EzDoc.iml" />
+      <module fileurl="file://C:\Users\Sir.WarFox\AndroidStudioProjects\EasyDoctor\EzDoc.iml" filepath="C:\Users\Sir.WarFox\AndroidStudioProjects\EasyDoctor\EzDoc.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
