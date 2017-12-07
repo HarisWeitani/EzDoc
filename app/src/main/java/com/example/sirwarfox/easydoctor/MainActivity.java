@@ -86,10 +86,10 @@ public class MainActivity extends AppCompatActivity
             fragment = new PayYourBillFragment();
         } else if (id == R.id.nav_premiumMember) {
             fragment = new PremiumMemberFragmednt();
-        }else if (id == R.id.nav_share) {
-            Toast.makeText(this, "We are Sorry This button is under construction", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_forum) {
             fragment = new ForumFragment();
+        } else if (id == R.id.nav_easterEgg) {
+            fragment = new EasterEggFragment();
         }
 
         if(fragment != null){
