@@ -100,11 +100,14 @@
         android:orientation="horizontal"
         android:layout_marginTop="20dp"
         >
+
         <ImageButton
+            android:id="@+id/btnImageBookmark"
             android:layout_width="50dip"
             android:layout_height="50dip"
             android:background="@drawable/bookmark"
             />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -122,6 +125,7 @@
             />
 
         <ImageButton
+            android:id="@+id/btnReview"
             android:layout_width="50dip"
             android:layout_height="50dip"
             android:background="@drawable/review"

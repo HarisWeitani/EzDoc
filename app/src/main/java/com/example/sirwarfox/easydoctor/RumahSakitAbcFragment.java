@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 /**
@@ -26,11 +27,10 @@ public class RumahSakitAbcFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
         view.findViewById(R.id.btnLihatDaftarDokter).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Rumah Sakit abc Pressed", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "Rumah Sakit abc Pressed", Toast.LENGTH_SHORT).show();
                 Fragment fragment = new DokterHarisLogitoFragment();
 
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
@@ -39,6 +39,28 @@ public class RumahSakitAbcFragment extends Fragment {
                 fragmentTransaction.replace(R.id.screen_area, fragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
+            }
+        });
+
+        view.findViewById(R.id.btnImageBookmark).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "Bookmarked", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        view.findViewById(R.id.btnReview).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new RumahSakitReviewFragment();
+
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                fragmentTransaction.replace(R.id.screen_area, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
             }
         });
     }
